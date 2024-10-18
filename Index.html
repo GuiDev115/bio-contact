@@ -1,21 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
     <title>Guidev</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <p>Guidev</p>
-    <main class="container">
-        <h1>Bem-vindo à minha Landing Page</h1>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/seuusuario" class="facebook">Facebook</a>
-            <a href="https://www.twitter.com/seuusuario" class="twitter">Twitter</a>
-            <a href="https://www.instagram.com/seuusuario" class="instagram">Instagram</a>
-            <a href="https://www.linkedin.com/in/seuusuario" class="linkedin">LinkedIn</a>
+    <img id="perfil" src="img/my-photo.jpg" alt="Foto de perfil de Guilherme Fabricio"/>
+    <br><br>
+
+    <h2>Guilherme Fabricio</h2>
+    <p>@guidev115</p>
+    <h3 style="margin-bottom: 5px;">Open Sourcer / Streamer / Estudante de CC</h3>
+
+    <div class="row">
+        <h5>Conteúdo!</h5>
+        <button class="btn btn-twitch btn-large" onclick="window.open('http://twitch.com/guidev115')" aria-label="Twitch">
+            <div class="button">
+                <i class="fa-brands fa-twitch"></i>
+                Twitch
+            </div>
+        </button>
+    </div>
+
+    <div class="row">
+        <button class="btn btn-default btn-ghost" onclick="window.open('https://dev.to/guidev115')" aria-label="DevTo">
+            <div class="button">
+                <i class="fa-solid fa-rss"></i>
+                DevTo
+            </div>
+        </button>
+
+        <button class="btn btn-default btn-ghost" onclick="showField('projetos')" aria-label="Projetos">
+            <div class="button">
+                <i class="fa-solid fa-gears"></i>
+                Projetos
+            </div>
+        </button>
+
+        <div id="projetos" style="display: none;" class="field terminal-alert terminal-alert-error">
+            Futuramente colocaremos os links dos projetos aqui.
         </div>
-    </main>
+    </div>
+
+    <div class="row">
+        <h5>Social</h5>
+        <button class="btn btn-ghost" onclick="window.open('https://bsky.app/profile/guidev.xyzo')" aria-label="Blue Sky">
+            <div class="button">
+                <i class="fa-brands fa-bluesky"></i>
+                Blue Sky
+            </div>
+        </button>
+
+        <button class="btn btn-ghost" onclick="window.open('https://x.com/guidev115')" aria-label="Twitter/X">
+            <div class="button">
+                <i class="fa-brands fa-twitter"></i>
+                Twitter/X
+            </div>
+        </button>
+    </div>
+
+    <div class="row">
+        <h5>Apoie o meu trabalho</h5>
+        <button class="btn btn-primary btn-ghost btn-large" onclick="showField('pix')" aria-label="Pix">
+            <div class="button">
+                <i class="fa-brands fa-pix"></i>
+                Pix
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </button>
+
+        <div id="pix" style="display: none;" class="field terminal-alert terminal-alert-error">
+            guilherme.fabricio.115@gmail.com
+        </div>
+    </div>
+
+    <div class="row">
+        <h5>Contato</h5>
+        <button class="btn btn-primary btn-ghost btn-large" onclick="showField('email')" aria-label="E-mail">
+            <div class="button">
+                <i class="fa-solid fa-envelope"></i>
+                E-mail
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </button>
+
+        <div id="email" style="display: none;" class="field terminal-alert terminal-alert-error">
+            guidev.contatos@gmail.com
+        </div>
+    </div>
+
+    <div class="row">
+        <h5>Portfólio</h5>
+        <button class="btn btn-default btn-ghost btn-large" onclick="window.open('http://github.com/guidev115')" aria-label="Github">
+            <div class="button">
+                <i class="fa-brands fa-github"></i>
+                Github
+            </div>
+        </button>
+    </div>
 </body>
 </html>
