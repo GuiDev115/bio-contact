@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     background: rgba(77, 2, 121, 0.8);
     padding: 20px;
@@ -34,3 +38,15 @@ h1 {
     margin-top: 20px;
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.footer-slide-up {
+    animation: slideUp 1s ease-in-out;
+}
