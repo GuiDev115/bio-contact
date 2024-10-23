@@ -2,6 +2,14 @@ body {
     background: linear-gradient(to bottom, #3f026b, #000000);
     color: white;
 }
+
+header {
+    background: rgba(77, 2, 121, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 #projects {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;

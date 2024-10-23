@@ -13,7 +13,7 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Header -->
-    <header class="bg-fuchsia-900 shadow">
+    <header>
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="text-lg font-semibold text-gray-700">
@@ -30,7 +30,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
+    <main class="container mx-auto px-6">
         <!-- Hero Section -->
         <section id="about" class="my-12">
             <h2 class="text-3xl font-bold mb-8 text-white">Sobre Mim</h2>
@@ -62,11 +62,16 @@
                                         <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                                     </svg>
                                 </div>
-                                <h3 class="font-bold text-lg text-black">Educação</h3>
+                                <h3 class="font-bold text-lg text-black">Graduando</h3>
                             </div>
                             <div>
-                                <p class="font-medium text-gray-800">Universidade Federal de Lavras (UFLA)</p>
-                                <p class="text-gray-600">Bacharelado em Ciência da Computação</p>
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <img src="img/logo-ufla.png" alt="Logo UFLA" class="w-10 h-10 object-contain rounded-full border-3 border-white">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Universidade Federal de Lavras (UFLA)</p>
+                                        <p class="text-gray-600">Bacharelado em Ciência da Computação</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
         
@@ -81,8 +86,13 @@
                                 <h3 class="font-bold text-lg text-black">Comunidade</h3>
                             </div>
                             <div>
-                                <p class="font-medium text-gray-800">He4rt Developers</p>
-                                <p class="text-gray-600">Membro Ativo da Comunidade</p>
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <img src="img/he4rt-logo.jpg" alt="Logo UFLA" class="w-10 h-10 object-contain rounded-full border-3 border-white">
+                                    <div>
+                                        <p class="font-medium text-gray-800">He4rt Developers</p>
+                                        <p class="text-gray-600">Membro Ativo da Comunidade</p>
+                                    </div>
+                                    </div>
                             </div>
                         </div>
         
@@ -109,23 +119,29 @@
                         <div class="space-y-4">
                             <div class="bg-gray-50 rounded-lg p-6">
                                 <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-800">Bacharelado em Ciência da Computação</h4>
-                                        <p class="text-gray-600">Universidade Federal de Lavras (UFLA)</p>
-                                        <p class="text-gray-500 mt-2">Principais disciplinas: Algoritmos e Estruturas de Dados, Banco de Dados, Engenharia de Software, Desenvolvimento Web</p>
+                                    <div class="flex gap-4">
+                                        <img src="img/logo-ufla.png" alt="Logo UFLA" class="w-16 h-16 object-contain">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-800">Bacharelado em Ciência da Computação</h4>
+                                            <p class="text-gray-600">Universidade Federal de Lavras (UFLA)</p>
+                                            <p class="text-gray-500 mt-2">Principais disciplinas: Algoritmos e Estruturas de Dados, Banco de Dados, Engenharia de Software, Desenvolvimento Web</p>
+                                        </div>
                                     </div>
-                                    <span class="text-gray-500">2020 - Presente</span>
+                                    <span class="text-gray-500 ml-4 whitespace-nowrap">2020 - Presente</span>
                                 </div>
                             </div>
 
                             <div class="bg-gray-50 rounded-lg p-6">
                                 <div class="flex justify-between items-start">
-                                    <div>
-                                        <h4 class="font-semibold text-gray-800">Curso Técnico Integrado em Informática</h4>
-                                        <p class="text-gray-600">Instituto Federal de Sul de Minas Gerais</p>
-                                        <p class="text-gray-500 mt-2">Foco em programação básica e desenvolvimento de sistemas - além da introdução a teoria da computação</p>
+                                    <div class="flex gap-4">
+                                        <img src="img/logo-ifsuldeminas.png" alt="Logo IFSULDEMINAS" class="w-16 h-16 object-contain">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-800">Curso Técnico Integrado em Informática</h4>
+                                            <p class="text-gray-600">Instituto Federal de Sul de Minas Gerais</p>
+                                            <p class="text-gray-500 mt-2">Foco em programação básica e desenvolvimento de sistemas - além da introdução a teoria da computação</p>
+                                        </div>
                                     </div>
-                                    <span class="text-gray-500">2016 - 2018</span>
+                                    <span class="text-gray-500 ml-4 whitespace-nowrap">2016 - 2018</span>
                                 </div>
                             </div>
                         </div>
@@ -156,8 +172,8 @@
                     <a href="https://github.com/GuiDev115/LFA4Noobs" target="_blank" class="text-blue-600 hover:text-blue-800">
                         <img src="img/automato.png" alt="Projeto 1" class="w-full h-72 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">LFA4Noobs</h3>
-                            <p class="text-gray-700 font-bold">Repositório dedicado a introduzir aos novos desenvolvedores, como é a linguagem formal e autômatos para quem nunca teve acesso a essa área</p>
+                            <h3 class="text-xl font-bold mb-2 text-black">LFA4Noobs</h3>
+                            <p class="text-gray-700">Repositório dedicado a introduzir aos novos desenvolvedores, como é a linguagem formal e autômatos para quem nunca teve acesso a essa área</p>
                         </div>
                     </a>
                 </div>
@@ -165,10 +181,10 @@
                 <!-- Project 2 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <a href="https://dev.to/guidev115/linguagens-formais-a-uniao-com-linguagens-e-computacao-30d5" target="_blank" class="text-blue-600 hover:text-blue-800">
-                        <img src="img/link-bolado-do-lfa.jpg" alt="Projeto 1" class="w-full object-cover">
+                        <img src="img/link-bolado-do-lfa.jpg" alt="Projeto 1" class="w-full h-72 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">LFA4Noobs</h3>
-                            <p class="text-gray-700 font-bold">Artigo breve de Linguagens Formais e Automâtos</p>
+                            <h3 class="text-xl font-bold mb-2 text-black">Linguagens Formais: A União com Linguagens e Computação</h3>
+                            <p class="text-gray-700">Artigo breve de Linguagens Formais e Automâtos -  Mas o que de fato seria "Linguagens Formais", e qual seria seu propósito?</p>
                         </div>
                     </a>
                 </div>
@@ -187,18 +203,18 @@
         <!-- Contact Section -->
         <section id="contact" class="my-12">
             <h2 class="text-3xl font-bold mb-4">Contato</h2>
-            <form class="bg-black shadow-md rounded-lg p-6">
+            <form class="bg-white shadow-md rounded-lg p-6">
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="name" type="text" placeholder="Seu nome">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200" id="name" type="text" placeholder="Seu nome">
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="email" type="email" placeholder="Seu email">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200" id="email" type="email" placeholder="Seu email">
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Mensagem</label>
-                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200" id="message" rows="4" placeholder="Sua mensagem"></textarea>
                 </div>
                 <div class="flex items-center justify-between">
                     <button class="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
