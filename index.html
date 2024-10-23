@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Desenvolvedor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-fuchsia-900 shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-lg font-semibold text-gray-700">
+                    <a href="#" class="text-white text-xl font-bold">Meu Portfólio</a>
+                </div>
+                <div>
+                    <a href="#about" class="text-white mx-2">Sobre</a>
+                    <a href="#projects" class="text-white mx-2">Projetos</a>
+                    <a href="#contact" class="text-white mx-2">Contato</a>
+                    <a href="#contact" class="text-white mx-2">Blog</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Hero Section -->
+        <section id="about" class="my-12">
+            <h2 class="text-3xl font-bold mb-8 text-white">Sobre Mim</h2>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <!-- Card Header com Foto -->
+                <div class="bg-fuchsia-900 p-6">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <img src="img/my-photo.jpg" alt="Minha Foto" class="w-32 h-32 rounded-full border-4 border-white shadow-lg">
+                        <div class="text-center md:text-left">
+                            <p class="text-2xl font-bold text-black mb-2">Guidev</p>
+                            <p class="text-black mb-2">Guilherme Fabricio Brito da Rosa</p>
+                            <p class="text-black font-bold mb-4">Desenvolvedor Back-end | Freelancer & Estudante</p>
+                            <p class="text-black text-justify leading-relaxed max-w-1xl">
+                                Estudante de Ciência da Computação na UFLA, desenvolvedor back-end freelancer especializado em Laravel e Node.js. Membro ativo da comunidade He4rt Devs, contribuindo para o crescimento do ecossistema tech brasileiro. Focado em desenvolver soluções eficientes e escaláveis para desafios complexos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Informações Detalhadas -->
+                <div class="p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Education -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-blue-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Educação</h3>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">Universidade Federal de Lavras (UFLA)</p>
+                                <p class="text-gray-600">Bacharelado em Ciência da Computação</p>
+                            </div>
+                        </div>
+        
+                        <!-- Community -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-red-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Comunidade</h3>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">He4rt Developers</p>
+                                <p class="text-gray-600">Membro Ativo da Comunidade</p>
+                            </div>
+                        </div>
+        
+                        <!-- Work -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-green-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Trabalho</h3>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">Desenvolvedor Back-end</p>
+                                <p class="text-gray-600">Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Formação Acadêmica -->
+                    <div class="mt-8">
+                        <h3 class="font-bold text-lg mb-4">Formação Acadêmica</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Bacharelado em Ciência da Computação</h4>
+                                        <p class="text-gray-600">Universidade Federal de Lavras (UFLA)</p>
+                                        <p class="text-gray-500 mt-2">Principais disciplinas: Algoritmos e Estruturas de Dados, Banco de Dados, Engenharia de Software, Desenvolvimento Web</p>
+                                    </div>
+                                    <span class="text-gray-500">2020 - Presente</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Curso Técnico Integrado em Informática</h4>
+                                        <p class="text-gray-600">Instituto Federal de Sul de Minas Gerais</p>
+                                        <p class="text-gray-500 mt-2">Foco em programação básica e desenvolvimento de sistemas - além da introdução a teoria da computação</p>
+                                    </div>
+                                    <span class="text-gray-500">2016 - 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stack Tecnológica -->
+                    <div class="mt-8">
+                        <h3 class="font-bold text-lg mb-4">Stack Tecnológica</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Laravel</span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Node.js</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">PHP</span>
+                            <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                                        
+
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="my-12">
+            <h2 class="text-3xl font-bold mb-4">Projetos e Artigos</h2>
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-12">
+
+                <!-- Project 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <a href="https://github.com/GuiDev115/LFA4Noobs" target="_blank" class="text-blue-600 hover:text-blue-800">
+                        <img src="img/automato.png" alt="Projeto 1" class="w-full h-72 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">LFA4Noobs</h3>
+                            <p class="text-gray-700 font-bold">Repositório dedicado a introduzir aos novos desenvolvedores, como é a linguagem formal e autômatos para quem nunca teve acesso a essa área</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <a href="https://dev.to/guidev115/linguagens-formais-a-uniao-com-linguagens-e-computacao-30d5" target="_blank" class="text-blue-600 hover:text-blue-800">
+                        <img src="img/link-bolado-do-lfa.jpg" alt="Projeto 1" class="w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">LFA4Noobs</h3>
+                            <p class="text-gray-700 font-bold">Artigo breve de Linguagens Formais e Automâtos</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 3 
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="project3.jpg" alt="Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Projeto 3</h3>
+                        <p class="text-gray-700">Descrição do projeto 3.</p>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-12">
+            <h2 class="text-3xl font-bold mb-4">Contato</h2>
+            <form class="bg-black shadow-md rounded-lg p-6">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="name" type="text" placeholder="Seu nome">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="email" type="email" placeholder="Seu email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Mensagem</label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social-media" class="my-12">
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/guilherme" target="_blank" class="text-blue-600 hover:text-blue-800">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.378-1.122-2.5-2.5-2.5s-2.5 1.122-2.5 2.5v5.5h-3v-10h3v1.268c.878-.878 2.122-1.268 3.5-1.268 2.481 0 4.5 2.019 4.5 4.5v5.5z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/guidev115" target="_blank" class="text-blue-900 hover:text-gray-700">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.624-5.475 5.921.43.371.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.218.694.825.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/guidev115" target="_blank" class="text-blue-400 hover:text-blue-600">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .385.044.76.127 1.122-4.087-.205-7.713-2.164-10.141-5.144-.423.725-.666 1.562-.666 2.457 0 1.694.863 3.188 2.175 4.065-.802-.026-1.558-.246-2.218-.616v.062c0 2.366 1.684 4.342 3.918 4.788-.41.111-.843.171-1.287.171-.314 0-.615-.03-.916-.086.617 1.926 2.407 3.33 4.526 3.369-1.66 1.3-3.757 2.075-6.033 2.075-.392 0-.779-.023-1.161-.067 2.148 1.378 4.7 2.182 7.446 2.182 8.933 0 13.82-7.404 13.82-13.82 0-.21-.005-.42-.014-.63.949-.686 1.771-1.54 2.422-2.515z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black shadow mt-12">
+        <div class="container mx-auto px-6 py-3 text-center">
+            <p class="text-white">&copy; 2024 Guilherme Fabricio. Todos os direitos reservados. 💜</p>
+        </div>
+    </footer>
+
+</body>
+</html>
