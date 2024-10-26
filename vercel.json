@@ -2,8 +2,9 @@
   "version": 2,
   "routes": [
     { "src": "/", "dest": "./src/html/index.html" },
-    { "src": "/css/(.*)", "dest": "./src/css/$1" },
-    { "src": "/js/(.*)", "dest": "./src/js/$1" },
+    { "src": "/css/(.*)", "dest": "./src/css/style.css" },
+    { "src": "/js/(.*)", "dest": "./src/js/email.js" },
+    { "src": "/js/(.*)", "dest": "./src/js/script.js" },
     { "src": "/img/(.*)", "dest": "./src/img/$1" },
     { "src": "/api/increment-counter", "dest": "./api/increment-counter.js" },
     { "src": "/(.*)", "dest": "./src/html/$1" }
