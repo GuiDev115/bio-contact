@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (blogLink) {
         blogLink.addEventListener('click', function(event) {
             event.preventDefault(); // Prevenir o comportamento padrão do link
-            alert('Ò blog está em construção!');
+            alert('O blog está em construção!');
         });
     }
 });
