@@ -52,7 +52,7 @@ Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontr
 
 ## Site em Prod
 
-**SITE**: [CLIQUE AQUI](guidev.tech)
+**SITE**: [CLIQUE AQUI](https://www.guidev.tech)
 
 ---
 
