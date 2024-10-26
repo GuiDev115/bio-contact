@@ -46,10 +46,16 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontrar em:
 
-- **Email**: [seu-email@example.com](mailto:seu-email@example.com)
-- **LinkedIn**: [Seu Perfil](https://www.linkedin.com/in/seu-perfil)
+- **Email**: [guidev.contatos@example.com](guidev.contatos@gmail.com)
+- **LinkedIn**: [Guilherme Fabricio](https://www.linkedin.com/in/guilhermeefabricio)
 - **GitHub**: [GuiDev115](https://github.com/GuiDev115)
 
 ---
+
+## Site
+
+O site já está em produção:
+
+**SITE**: [CLIQUE AQUI](guidev.tech)
 
 Feito com 💜 por [GuiDev115](https://github.com/GuiDev115)
