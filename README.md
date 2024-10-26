@@ -4,13 +4,12 @@ Bem-vindo ao Bio-Contact! Esta é uma landing page de contato projetada para des
 
 ## Sobre
 
-Bio-Contact é uma landing page moderna e responsiva criada para desenvolvedores, freelancers e profissionais que desejam exibir suas informações de contato, habilidades e projetos de forma elegante e acessível.
+Uma landing page moderna e responsiva criada para desenvolvedores, freelancers e profissionais que desejam exibir suas informações de contato, habilidades e projetos de forma elegante e acessível.
 
 ## Funcionalidades
 
 - **Seção Sobre Mim**: Destaque suas informações pessoais e profissionais.
 - **Seção de Projetos**: Mostre seus projetos mais importantes com descrições e links.
-- **Carrossel de Projetos**: Navegue pelos projetos de forma interativa.
 - **Seção de Contato**: Forneça uma maneira fácil para as pessoas entrarem em contato com você.
 - **Design Responsivo**: Layout adaptável para diferentes dispositivos e tamanhos de tela.
 
@@ -19,7 +18,6 @@ Bio-Contact é uma landing page moderna e responsiva criada para desenvolvedores
 - **HTML5**: Estrutura da página.
 - **CSS3**: Estilização e layout.
 - **JavaScript**: Funcionalidades interativas.
-- **Swiper.js**: Carrossel de projetos.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
 
 ## Como Usar
