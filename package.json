@@ -1,0 +1,15 @@
+{
+  "name": "bio-contact",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao Bio-Contact! Esta é uma landing page de contato projetada para destacar suas habilidades, projetos e fornecer uma maneira fácil para as pessoas entrarem em contato com você.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@upstash/redis": "^1.34.3"
+  }
+}
