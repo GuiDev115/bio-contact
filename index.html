@@ -8,23 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Header -->
-    <header>
+    <header class="relative">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="text-lg font-semibold text-gray-700">
                     <a href="#" class="text-white text-xl font-bold">Meu Portfólio</a>
                 </div>
-                <div>
+                <button class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="menu-items">
                     <a href="#about" class="text-white mx-2 hover:text-white-600 hover:bg-purple-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">Sobre</a>
                     <a href="#projects" class="text-white mx-2 hover:bg-purple-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">Projetos</a>
                     <a href="#contact" class="text-white mx-2 hover:bg-purple-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">Contato</a>
-                    <a href="#contact" class="text-white mx-2 hover:bg-purple-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">Blog</a>
+                    <a href="#blog" class="text-white mx-2 hover:bg-purple-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5  blog-link">Blog</a>
                 </div>
             </div>
         </div>
@@ -125,40 +131,40 @@
                     </div>
 
                     <!-- Formação Acadêmica -->
-                    <div class="mt-8">
-                        <h3 class="font-bold text-lg mb-4">Formação Acadêmica</h3>
-                        <div class="space-y-4">
-                            <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="mt-1">
+                        <h3 class="font-bold text-lg mb-1">Formação Acadêmica</h3>
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 rounded-lg p-2">
                                 <div class="flex justify-between items-start">
                                     <div class="flex gap-4">
                                         <img src="img/logo-ufla.png" alt="Logo UFLA" class="w-16 h-16 object-contain">
                                         <div>
-                                            <h4 class="font-semibold text-gray-800">Bacharelado em Ciência da Computação
+                                            <h4 class="font-bold text-gray-800">Bacharelado em Ciência da Computação
                                             </h4>
-                                            <p class="text-gray-600">Universidade Federal de Lavras (UFLA)</p>
+                                            <p class="text-gray-600 font-semibold">Universidade Federal de Lavras (UFLA)</p>
                                             <p class="text-gray-500 mt-2">Principais disciplinas: Algoritmos e
                                                 Estruturas de Dados, Banco de Dados, Engenharia de Software,
                                                 Desenvolvimento Web</p>
                                         </div>
                                     </div>
-                                    <span class="text-gray-500 ml-4 whitespace-nowrap">2020 - Presente</span>
+                                    <span class="text-gray-500 ml-4 whitespace-nowrap hidden md:block">2020 - Presente</span>
                                 </div>
                             </div>
 
-                            <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="bg-gray-50 rounded-lg p-2">
                                 <div class="flex justify-between items-start">
                                     <div class="flex gap-4">
                                         <img src="img/logo-ifsuldeminas.png" alt="Logo IFSULDEMINAS"
                                             class="w-16 h-16 object-contain">
                                         <div>
-                                            <h4 class="font-semibold text-gray-800">Curso Técnico Integrado em
+                                            <h4 class="font-bold text-gray-800">Curso Técnico Integrado em
                                                 Informática</h4>
-                                            <p class="text-gray-600">Instituto Federal de Sul de Minas Gerais</p>
+                                            <p class="text-gray-600 font-semibold">Instituto Federal de Sul de Minas Gerais (IFSULDEMINAS)</p>
                                             <p class="text-gray-500 mt-2">Foco em programação básica e desenvolvimento
                                                 de sistemas - além da introdução a teoria da computação</p>
                                         </div>
                                     </div>
-                                    <span class="text-gray-500 ml-4 whitespace-nowrap">2016 - 2018</span>
+                                    <span class="text-gray-500 ml-4 whitespace-nowrap  hidden md:block">2016 - 2018</span>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +172,7 @@
 
                     <!-- Stack Tecnológica -->
                     <div class="mt-8">
-                        <h3 class="font-bold text-lg mb-4">Stack Tecnológica</h3>
+                        <h3 class="font-bold text-lg mb-0">Stack Tecnológica</h3>
                         <div class="flex flex-wrap gap-3">
                             <span
                                 class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Laravel</span>
@@ -182,49 +188,68 @@
 
                 </div>
             </div>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects" class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Projetos e Artigos</h2>
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-12">
-
-                <!-- Project 1 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <a href="https://github.com/GuiDev115/LFA4Noobs" target="_blank"
-                        class="text-blue-600 hover:text-blue-800">
-                        <img src="img/automato.png" alt="Projeto 1" class="w-full h-72 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-black">LFA4Noobs</h3>
-                            <p class="text-gray-700">Repositório dedicado a introduzir aos novos desenvolvedores, como é
-                                a linguagem formal e autômatos para quem nunca teve acesso a essa área</p>
-                        </div>
-                    </a>
+            <section id="projects" class="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Projetos e Artigos</h2>
+                
+                <div class="project-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <article class="project-card bg-white rounded-xl overflow-hidden shadow-lg">
+                        <a href="https://github.com/GuiDev115/LFA4Noobs" target="_blank" 
+                           class="block group">
+                            <div class="overflow-hidden">
+                                <img src="img/automato.png" 
+                                     alt="LFA4Noobs" 
+                                     class="project-image w-full h-48 md:h-72 object-cover object-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    LFA4Noobs
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Repositório dedicado a introduzir aos novos desenvolvedores, como é 
+                                    a linguagem formal e autômatos para quem nunca teve acesso a essa área
+                                </p>
+                                <div class="mt-4 flex items-center text-blue-600">
+                                    <span class="text-sm font-medium">Ver projeto</span>
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+        
+                    <!-- Project 2 -->
+                    <article class="project-card bg-white rounded-xl overflow-hidden shadow-lg">
+                        <a href="https://dev.to/guidev115/linguagens-formais-a-uniao-com-linguagens-e-computacao-30d5" 
+                           target="_blank" 
+                           class="block group">
+                            <div class="overflow-hidden">
+                                <img src="img/link-bolado-do-lfa.jpg" 
+                                     alt="Linguagens Formais" 
+                                     class="project-image w-full h-48 md:h-72 object-cover object-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    Linguagens Formais: A União com Linguagens e Computação
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Artigo breve de Linguagens Formais e Automâtos - Mas o que de fato
+                                    seria "Linguagens Formais", e qual seria seu propósito?
+                                </p>
+                                <div class="mt-4 flex items-center text-blue-600">
+                                    <span class="text-sm font-medium">Ler artigo</span>
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <a href="https://dev.to/guidev115/linguagens-formais-a-uniao-com-linguagens-e-computacao-30d5"
-                        target="_blank" class="text-blue-600 hover:text-blue-800">
-                        <img src="img/link-bolado-do-lfa.jpg" alt="Projeto 1" class="w-full h-72 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-black">Linguagens Formais: A União com Linguagens e
-                                Computação</h3>
-                            <p class="text-gray-700">Artigo breve de Linguagens Formais e Automâtos - Mas o que de fato
-                                seria "Linguagens Formais", e qual seria seu propósito?</p>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Project 3 
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="project3.jpg" alt="Projeto 3" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Projeto 3</h3>
-                        <p class="text-gray-700">Descrição do projeto 3.</p>
-                    </div>
-                </div>-->
-            </div>
-        </section>
+            </section>
 
         <!-- Contact Section -->
         <section id="contact" class="my-12">
