@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./img/he4rt-logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Desenvolvedor</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js"></script>
     <script src="./src/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -259,24 +263,24 @@
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
-                        id="name" type="text" placeholder="Seu nome">
+                        id="name" type="text" placeholder="Seu nome" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
-                        id="email" type="email" placeholder="Seu email">
+                        id="email" type="email" placeholder="Seu email" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Mensagem</label>
                     <textarea
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
-                        id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                        id="message" rows="4" placeholder="Sua mensagem" required></textarea>
                 </div>
                 <div class="flex items-center justify-between">
                     <button
                         class="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button">
+                        type="submit">
                         Enviar
                     </button>
                 </div>
