@@ -50,8 +50,6 @@ Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontr
 - **LinkedIn**: [Guilherme Fabricio](https://www.linkedin.com/in/guilhermeefabricio)
 - **GitHub**: [GuiDev115](https://github.com/GuiDev115)
 
----
-
 ## Site em Prod
 
 **SITE**: [CLIQUE AQUI](guidev.tech)
