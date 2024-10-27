@@ -24,15 +24,18 @@ Uma landing page moderna e responsiva criada para desenvolvedores, freelancers e
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/GuiDev115/bio-contact.git
+    git clone https://github.com/GuiDev115/bio-contact.git && cd bio-contact
     ```
 
-2. Navegue até o diretório do projeto:
+2. Instale as depedências do projeto:
     ```bash
-    cd bio-contact
+    npm install && npm npm install nodemon
     ```
 
-3. Abra o arquivo `index.html` no seu navegador preferido.
+3. Execute o servidor local:
+    ```
+    npm run start
+    ```
 
 ## Contribuição
 
