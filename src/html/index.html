@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
     <script src="../js/email.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("GCih5CpnYnrYnlhhd");
+        })();
+    </script>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
@@ -259,7 +264,8 @@
         <!-- Contact Section -->
         <section id="contact" class="my-12">
             <h2 class="text-3xl font-bold mb-4">Contato</h2>
-            <form class="bg-white shadow-md rounded-lg p-6">
+            <form id="contact-form" class="bg-white shadow-md rounded-lg p-6">
+                <!-- Campos do formulário -->
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
                     <input
