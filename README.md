@@ -29,7 +29,7 @@ Uma landing page moderna e responsiva criada para desenvolvedores, freelancers e
 
 2. Instale as depedências do projeto:
     ```bash
-    npm install && npm npm install nodemon
+    npm install && npm install nodemon
     ```
 
 3. Execute o servidor local:
