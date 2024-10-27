@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         menuItems.classList.toggle('active');
     });
 
-    // Fechar o menu ao clicar em um link
     const menuLinks = document.querySelectorAll('.menu-items a');
     menuLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Fechar o menu ao clicar fora dele
     document.addEventListener('click', function(event) {
         if (!hamburger.contains(event.target) && !menuItems.contains(event.target)) {
             menuItems.classList.remove('active');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const blogLink = document.querySelector('.blog-link');
     if (blogLink) {
         blogLink.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevenir o comportamento padrão do link
+            event.preventDefault(); 
             alert('O blog está em construção!');
         });
     }
