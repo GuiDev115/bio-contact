@@ -1,13 +1,15 @@
-
 {
-  "version": 2,
-  "routes": [
-    { "src": "/", "dest": "/src/html/index.html" },
-    { "src": "/src/css/(.*)", "dest": "/src/css/$1" },
-    { "src": "/src/js/(.*)", "dest": "/src/js/$1" },
-    { "src": "/src/images/(.*)", "dest": "/src/images/$1" },
-    { "src": "/api/increment-counter", "dest": "/api/increment-counter.js" },
-    { "src": "/(.*)", "dest": "/src/html/$1" }
-  ],
-  "outputDirectory": "src/html"
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "server.js"
+        }
+    ]
 }
